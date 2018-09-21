@@ -1,0 +1,83 @@
+<!--h1,p,nav(ol,li,a)img,iframe,table, div-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>/* style태그 여기서도 가능,순서*/
+            p{
+                color: blue;
+            }
+            p{
+                color: red;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="html_tag.css">
+    </head>
+    <body>
+        <div> <!--p,h태그-->
+            <p>Hello</p>
+            <p class="korean">안녕</p>
+            <h1 class="korean" id="background" style="background-color: purple;">제목1</h1>
+            <h2 id="background">제목2</h2>
+            <h3>제목3</h3>
+            <h4>제목4</h4>
+        </div>
+        <div> <!--ol,ul태그-->
+            <ol>
+                <li>순서1</li>
+                <li>순서2</li>
+                <li>순서3</li>
+            </ol>
+            <ul>
+                <li>순서없다</li>
+                <li>나두</li>
+                <li>얘두</li>
+            </ul>
+        </div>
+        <div> <!--img태그 -->
+            <img src="http://cafefiles.naver.net/MjAxODAzMDFfMTcz/MDAxNTE5ODUyMTc5NTkw.fz5N2p3Q1JnswLax7HxL0ZnS3k3nbpJuKKEUKUPrJs0g._EJyBfSq79curIL_6nqXRXrh1A4ntTggEkjHkFyFLaQg.JPEG.mmmmhaveanothers0066/externalFile.jpg" style="width:50%">
+            <img src="/img/seah.jpg" style="width:50%">
+        </div>
+        <div> <!-- table태그 -->
+            <table class="student">
+                <h3>멋쟁이 사자처럼 6기</h3>
+                <tr>
+                    <th style="border-bottom:1px solid black">이름</th>
+                    <th style="border-bottom:1px solid black">학과</th>
+                    <th style="border-bottom:1px solid black">학번</th>
+                </tr>
+                <tr>
+                    <td>박세아</td>
+                    <td>응용컴퓨터공학과</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>김순후</td>
+                    <td>경영학과</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>최수빈</td>
+                    <td>소프트웨어학과</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+        <div> <!--form태그-->
+            <form style="border:1px solid black" action="#">
+                <h3>로그인</h3>
+                
+                <label>이메일</label>
+                <input type="text" value="abc@def.com" name="user_email"><br>
+                
+                <label>비밀번호</label>
+                <input type="text" placeholder="비밀번호를 입력해주세요" name="user_password"><br>
+                
+                <input type="submit">
+            </form>
+        </div>
+        <br>
+        <div class="test first">박스1</div>
+        <div class="test second">박스2</div>
+    </body>
+</html>

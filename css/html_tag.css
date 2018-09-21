@@ -1,0 +1,36 @@
+li{
+    color: orange;
+}
+
+ol li:first-child{
+    color: green;
+}
+
+.korean{
+    color: blue;
+    background-color: gray;
+}
+
+#background{
+    background-color: yellow;
+}
+
+.student tr td:first-child{
+    color: blue;
+}
+
+.test{
+    border:1px solid red;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.first{
+    margin: 20px;
+}
+
+.second{
+    padding: 20px;
+}

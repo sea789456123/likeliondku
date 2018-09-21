@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>  
+      table { border-collapse:collapse; }  
+      th, td { border:1px solid gray; }
+      button { background: none; color: blue;}
+    </style>
+  </head>
+  <body>
+    <button onclick="row.add()">행추가</button>
+    <button onclick="dayToNight(this)">야간모드</button>
+    <hr>
+    <table>
+      <thead>
+        <th>번호</th>
+        <th>시간</th>
+        <th>삭제</th>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+    
+    <script>
+      // function add_row(){
+      //   var row = tbody.insertRow(tbody.rows.length);
+      //   var cell1 = row.insertCell(0);
+      //   var cell2 = row.insertCell(1);
+      //   var cell3 = row.insertCell(2);
+      //   cell1.innerHTML = id;
+      //   id++;
+      //   cell2.innerHTML = new Date().toLocaleString();
+      //   cell3.innerHTML = "<button onclick='delete_row(id)'>삭제</button>";
+      // }
+      
+      // function delete_row(id){
+      //   tbody.deleteRow(id);
+      // }
+      
+      var row = {
+        id : 1,
+        //tbody : document.getElementById("tbody"),
+        
+        add: function() {
+          var row = tbody.insertRow(tbody.rows.length);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          cell1.innerHTML = this.id;
+          this.id++;
+          cell2.innerHTML = new Date().toLocaleString();
+          cell3.innerHTML = "<button onclick='row.delete(this.id)'>삭제</button>";
+        },
+        
+        delete: function(id){
+          tbody.deleteRow(id);
+        }
+      }
+
+      var body = document.querySelector('body');
+
+      function dayToNight(self){
+        var buttons = document.querySelectorAll('button');
+        var i =0;
+        if(self.innerHTML == '주간모드'){
+          body.style.backgroundColor='white';
+          body.style.color='black';
+          while(i < buttons.length){
+            buttons[i].style.color='blue';
+            i++;
+          }
+          self.innerHTML = '야간모드';
+        }
+        else{
+          body.style.backgroundColor='black';
+          body.style.color='powderblue';
+          while(i < buttons.length){
+            buttons[i].style.color='lightyellow';
+            i++;
+          }
+          self.innerHTML = '주간모드';
+        }
+      }
+    </script>
+  </body>
+</html>

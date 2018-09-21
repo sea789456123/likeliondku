@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body onload="clock()">
+    <script>
+      function clock(){
+        // var printclock = document.getElementById('printclock'); 없어도 동작함..!
+        var current = new Date();
+        var currentHours = current.getHours();
+        var currentMinutes = current.getMinutes();
+        var currentSeconds = current.getSeconds();
+        
+        printclock.innerHTML="현재 시간은 "+currentHours+"시 "+currentMinutes+"분 "+currentSeconds+"초 입니다.";
+        
+        setTimeout("clock()",1000);   // 1초마다 clock() 함수 호출
+      }
+    </script>
+    
+    <h1 id="printclock"></h1>
+  </body>
+</html>

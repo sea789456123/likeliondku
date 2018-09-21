@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .row div{
+        border: 1px solid blue;
+        height: 50px;
+      }
+      /* grid */
+      .grid div{
+        border: 1px solid green;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      @media(max-width:500px){
+        .grid{
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      /* flex */
+      .flex{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .flex div{
+        border: 1px solid pink;
+        width: 300px;
+      }
+      /* inline-block */
+      .inline_block div{
+        border: 1px solid purple;
+        display: inline-block;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-lg-8 col-md-4 col-sm-2 col-xs-1">.col-lg-8 col-md-4 col-sm-2 col-xs-1</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">.col-lg-8</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-offset-4">.col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">.col-sm-2</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-1">.col-xs-1</div>
+    </div>
+
+    <!-- no bootstrap -->
+    <div class="grid">
+      <div>그리드 박스1</div>
+      <div>그리드 박스2</div>
+      <div>그리드 박스3</div>
+      <div>그리드 박스4</div>
+      <div>그리드 박스5</div>
+      <div>그리드 박스6</div>
+    </div>
+    
+    <div class="flex">
+      <div>플랙스 박스1</div>
+      <div>플랙스 박스2</div>
+      <div>플랙스 박스3</div>
+      <div>플랙스 박스4</div>
+      <div>플랙스 박스5</div>
+      <div>플랙스 박스6</div>
+    </div>
+    
+    <div class="inline_block">
+      <div>인라인블럭 박스1</div>
+      <div>인라인블럭 박스2</div>
+      <div>인라인블럭 박스3</div>
+      <div>인라인블럭 박스4</div>
+      <div>인라인블럭 박스5</div>
+      <div>인라인블럭 박스6</div>
+    </div>
+  </body>
+</html>

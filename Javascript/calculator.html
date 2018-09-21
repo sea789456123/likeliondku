@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>간단한 계산기</h1>
+  <input type="number" style="width:30px;" onkeydown="checkNum();">
+  <select id="operator">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+  </select>
+  <input type="number" style="width:30px;" onkeydown="checkNum();">
+  <button onclick="calculate();">=</button>
+  <p id="result" style="display: inline;"></p>
+
+  <script type="text/javascript">
+    function checkNum(){
+      var keycode = event.keyCode;
+      if( keycode == 8 || keycode == 9 || keycode == 13){
+        //Tab, Backspace, Enter 가능
+      }
+      else if (keycode >= 37 && keycode <= 40){
+        //방향키 네개 가능
+      }
+      else if( keycode < 48 || keycode > 57){
+        //숫자 외 입력방지
+        alert("숫자만 입력해주세요.");
+      }
+    }
+
+    function calculate(){
+      var nums = document.querySelectorAll('input');
+      var num1 = parseInt(nums[0].value);
+      var num2 = parseInt(nums[1].value);
+      var operators = document.getElementById('operator');
+      var operator = operators.options[operators.selectedIndex].text;
+      var result;
+
+      if( operator == '+'){
+        result = num1+num2;
+      }
+      else if( operator == '-'){
+        result = num1-num2;
+      }
+      else if(operator == '*'){
+        result = num1*num2;
+      }
+      else{
+        result = num1/num2;
+      }
+
+      document.getElementById('result').innerHTML=result;
+    }
+  </script>
+</body>
+</html>

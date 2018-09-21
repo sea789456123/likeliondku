@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head></head>  
+<body>
+  <script>
+    function Person(first, last, age, gender, interests) {
+    this.name = {
+      'first': first,
+      'last' : last
+    };
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+    this.bio = function() {
+      document.write(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.<br>');
+    };
+    this.greeting = function() {
+      document.write('Hi! I\'m ' + this.name.first + '.<br>');
+    };
+  }
+  
+  var person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+  
+  person1.bio();
+  person1.greeting();
+  </script>
+</body>
+</html>

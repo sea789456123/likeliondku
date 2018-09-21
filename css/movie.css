@@ -1,0 +1,55 @@
+/*header부분*/
+header{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+header p{
+    color: gray;
+}
+
+/*nav부분*/
+nav{
+    border-bottom: 1px solid black;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav ul{
+    text-align: right;
+    margin-right: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*container 부분*/
+.container{
+    border: 1px solid black;
+    margin: 10px 50px 0px 50px;
+    padding-left: 10px;
+}
+
+.container ul, .container h3{
+    display: inline-block;
+    list-style: none;
+}
+
+.container ul{
+    padding-left: 10px;
+    margin: 0px;
+    position: relative;
+    top: -40px;
+}

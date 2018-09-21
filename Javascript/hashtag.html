@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+      <h1>Hashtag '#'자동 완성 기능</h1>
+      <ol>
+          <li>input 입력칸에 '#'이 준비되어 있어야 함</li>
+          <li>사용자가 스페이스를 누를때마다 ' #'이 자동입력 되어야 함 ->javascript, 스페이스 keyCode 사용</li>
+          <li>입력 버튼을 누르면 밑에 p태그에 나타낸다 (버튼 누르기 전에는 아무 내용도 없어야 함)</li>
+      </ol>
+      
+      <input type="text" value="#" onkeydown="return hashtag();"/>
+      <button onclick="submit();">입력</button>
+      <p id="result"></p>
+      
+      <script type="text/javascript">
+        var tag = document.querySelector('input');
+        
+        function hashtag(){
+          if( event.keyCode == 32){
+            tag.value += " #";
+            return false;
+          }
+        }
+        
+        function submit(){
+          var result = document.getElementById('result');
+          result.innerHTML = tag.value;
+        }
+      </script>
+  </body>
+</html>

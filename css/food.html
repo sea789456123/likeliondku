@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0px 100px;
+    }
+    .grid div{
+      width: 325px;
+      border: 1px solid gray;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .grid img{
+      width: 300px;
+      border-radius: 10px;
+    }
+    @media(max-width:800px){
+      .grid{
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 50px;
+      }
+      .grid div{
+        width: 225px;
+      }
+      .grid img{
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Album</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="likelion.html">Likelion6</a></li>
+          <li><a href="hobby.html">Hobby</a></li>
+          <li class="active"><a href="food.html">Food</a></li>
+          <li><a href="view.html">View</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="grid">
+      <div>
+        <img src="img/food/food1.jpg">
+        <hr>
+        <h3>팬케익팬트리_뚝섬<br>짱맛짱맛</h3>
+      </div>
+      <div>
+        <img src="img/food/food2.jpg">
+        <hr>
+        <h3>오센_이수</h3>
+      </div>
+      <div>
+        <img src="img/food/food3.jpg">
+        <hr>
+        <h3>버터핑거팬케익_강남</h3>
+      </div>
+      <div>
+        <img src="img/food/food4.jpg">
+        <hr>
+        <h3>버터핑거팬케익_강남</h3>
+      </div>
+      <div>
+        <img src="img/food/food5.jpg">
+        <hr>
+        <h3>룬_강남</h3>
+      </div>
+      <div>
+        <img src="img/food/food6.jpg">
+        <hr>
+        <h3>어게인리프레쉬_강남</h3>
+      </div>
+      <div>
+        <img src="img/food/food7.jpg">
+        <hr>
+        <h3>호텔릴렉스2조식_대만</h3>
+      </div>
+      <div>
+        <img src="img/food/food8.jpg">
+        <hr>
+        <h3>돼지집_죽전</h3>
+      </div>
+    </div>
+</body>
+</html>
