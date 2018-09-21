@@ -1,4 +1,5 @@
-# [Front-End] HTML, CSS, JAVASCRIPT
+[Front-End] HTML, CSS, JAVASCRIPT
+===================================================
 안녕하세요 **멋쟁이사자처럼 단국대 6기 운영진**입니다.  
 c9 repository가 너무 질서없이 나열되어 있어 정리하고자 제가 수업을 진행했던 **html, css, javascript** 부분을 모아봤습니다.
 
