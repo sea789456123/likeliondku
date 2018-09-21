@@ -1,26 +1,14 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+안녕하세요 멋쟁이사자처럼 6기 운영진입니다.
+c9 repository가 너무 질서없이 나열되어 있어 정리하고자 제가 수업을 진행했던 html, css, javascript 부분을 모아봤습니다.
 
+간단한 이론설명 후 라이브코딩방식으로 진행했기 때문에 이론에서 배운것을 적용할 수 있을 정도로 간단한 내용으로 구성했습니다.
+각 html, css, javascript 폴더는 연관되어 있는 것이 아닌 각 개별의 수업내용들을 담은 것입니다.
+1. html
+많이 쓰이는 html tag에 대해 살펴보고 영화소개페이지를 통해 간단하게 html 마크업 언어를 사용합니다. 
+2. css
+위 html에서 만든 영화소개 html 파일을 복사해 여기에 css를 덧붙여 봅시다.
+또한, display의 속성의 이해를 돕기 위해(inline-block, flex, grid, bootstrap) 등의 다양한 방법으로 사용해보고 차이를 살펴보세요.
+3. javascript
+동적으로 작동하는 부분을 나타내기 위해 계산기, 현재시간 실시간 나타내기, 해시태그 자동완성, 좋아요, 객체, 테이블 추가/삭제 등을 구현해봅시다.
 
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+저 또한 아직 많이 미숙한 실력이지만 프론트엔드 부분을 공부하고자 하시는 분들에게 도움이 되었으면 좋겠습니다.
